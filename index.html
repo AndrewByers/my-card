@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Andrew Byers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            background: var(--card-bg);
+            padding: 40px 20px;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #e2e8f0;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 0 0 8px 0;
+            font-weight: 600;
+        }
+
+        .title {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .button-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: block;
+            padding: 16px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: #f1f5f9;
+            color: var(--text-color);
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="profile.jpg" alt="Andrew Byers" class="profile-photo">
+        
+        <h1>Andrew Byers</h1>
+        <p class="title">Innovation Coach | NXD | Fractional Exec</p>
+
+        <div class="button-stack">
+            <a href="contact.vcf" class="btn btn-primary">Save to Contacts</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
+            <a href="https://yourwebsite.com" target="_blank" class="btn btn-secondary">Personal Website</a>
+        </div>
+
+        <footer>
+            Tap to connect with Andrew
+        </footer>
+    </div>
+
+</body>
+</html>
